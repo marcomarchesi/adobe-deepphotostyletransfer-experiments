@@ -231,6 +231,8 @@ def stylize(args, Matting):
 
     content_masks, style_masks = load_seg(args.content_seg_path, args.style_seg_path, [content_width, content_height], [style_width, style_height])
 
+    print("Con")
+
     if not args.init_image_path:
         if Matting:
             print("<WARNING>: Apply Matting with random init")
